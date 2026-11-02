@@ -21,7 +21,7 @@
 
 ### 2.1 架构分层
 
-![工业物联网系统总体架构](docs/screenshots/architecture.png)
+![工业物联网系统总体架构](docs/screenshots/整体架构图.png)
 
 
 

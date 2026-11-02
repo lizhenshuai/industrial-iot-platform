@@ -21,7 +21,7 @@
 
 ### 2.1 架构分层
 
-![8ee37076-c84f-46c6-8402-30efff24781d](C:\Users\L\Downloads\8ee37076-c84f-46c6-8402-30efff24781d.png)
+![工业物联网系统总体架构](docs/screenshots/architecture.png)
 
 
 

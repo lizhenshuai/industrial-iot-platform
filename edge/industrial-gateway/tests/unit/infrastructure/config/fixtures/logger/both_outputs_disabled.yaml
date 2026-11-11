@@ -1,0 +1,3 @@
+logging:
+  console_enabled: false
+  file_enabled: false

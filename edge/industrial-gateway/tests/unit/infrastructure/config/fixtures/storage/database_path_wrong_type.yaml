@@ -1,0 +1,6 @@
+# database_path 必须是标量字符串，不能是 Sequence
+storage:
+  database_path:
+    - data
+    - gateway.db
+  busy_timeout_ms: 5000

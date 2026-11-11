@@ -1,0 +1,4 @@
+# busy_timeout_ms 必须是整数，不接受小数
+storage:
+  database_path: "data/test_gateway.db"
+  busy_timeout_ms: 1.5

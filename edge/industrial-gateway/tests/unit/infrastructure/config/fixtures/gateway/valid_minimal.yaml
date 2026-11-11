@@ -1,0 +1,5 @@
+# 仅提供必填配置，其余配置段使用各配置结构体的默认值
+schema_version: 1
+
+gateway:
+  id: "industrial-gateway-minimal"

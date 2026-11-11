@@ -1,0 +1,4 @@
+# mqtt 节点不是映射类型
+mqtt:
+  - item1
+  - item2

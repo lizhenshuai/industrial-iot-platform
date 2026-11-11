@@ -1,0 +1,6 @@
+# gateway 下包含未知配置项
+schema_version: 1
+
+gateway:
+  id: "industrial-gateway-test"
+  unknown_key: "unexpected"

@@ -1,0 +1,4 @@
+# gateway 配置段缺少必填 id
+schema_version: 1
+
+gateway: {}

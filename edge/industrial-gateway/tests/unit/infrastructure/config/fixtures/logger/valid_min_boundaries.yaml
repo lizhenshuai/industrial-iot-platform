@@ -1,0 +1,4 @@
+logging:
+  rotation:
+    max_size_bytes: 1
+    max_files: 1

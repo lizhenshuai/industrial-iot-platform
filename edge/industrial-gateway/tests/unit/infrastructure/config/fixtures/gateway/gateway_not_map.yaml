@@ -1,0 +1,6 @@
+# gateway 节点不是映射类型
+schema_version: 1
+
+gateway:
+  - item1
+  - item2

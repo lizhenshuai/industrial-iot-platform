@@ -1,0 +1,3 @@
+logging:
+  rotation:
+    max_files: 49

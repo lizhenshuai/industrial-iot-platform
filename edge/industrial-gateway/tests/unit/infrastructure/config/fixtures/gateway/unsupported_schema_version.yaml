@@ -1,0 +1,5 @@
+# Parser 应解析成功，Validator 应拒绝不支持的版本
+schema_version: 2
+
+gateway:
+  id: "industrial-gateway-test"

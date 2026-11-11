@@ -1,0 +1,3 @@
+# keep_alive 无法转换为整数
+mqtt:
+  keep_alive: invalid-value

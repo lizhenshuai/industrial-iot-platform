@@ -1,0 +1,2 @@
+# storage 必须是 Map
+storage: "not-a-map"

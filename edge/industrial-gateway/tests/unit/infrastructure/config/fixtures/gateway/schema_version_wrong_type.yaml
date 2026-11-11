@@ -1,0 +1,5 @@
+# schema_version 类型错误，无法解析为整数
+schema_version: not-a-number
+
+gateway:
+  id: "industrial-gateway-test"

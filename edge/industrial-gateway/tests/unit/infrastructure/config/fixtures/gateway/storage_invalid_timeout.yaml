@@ -1,0 +1,9 @@
+# Parser 应解析成功，Validator 应拒绝超出上限的 busy_timeout_ms
+schema_version: 1
+
+gateway:
+  id: "industrial-gateway-test"
+
+storage:
+  database_path: "data/gateway-test.db"
+  busy_timeout_ms: 60001

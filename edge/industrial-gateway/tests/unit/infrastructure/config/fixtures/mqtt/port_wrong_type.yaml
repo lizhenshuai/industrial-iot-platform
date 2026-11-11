@@ -1,0 +1,3 @@
+# port 无法转换为整数
+mqtt:
+  port: invalid-port

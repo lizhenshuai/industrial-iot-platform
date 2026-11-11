@@ -1,0 +1,4 @@
+# 包含不支持的 MQTT 配置项
+mqtt:
+  enabled: true
+  unknown_key: 123

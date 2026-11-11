@@ -1,0 +1,5 @@
+# 包含未定义的 storage 配置项
+storage:
+  database_path: "data/test_gateway.db"
+  busy_timeout_ms: 5000
+  unknown_option: true

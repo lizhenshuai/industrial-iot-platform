@@ -1,0 +1,5 @@
+# Parser 应解析成功，Validator 应拒绝空网关 ID
+schema_version: 1
+
+gateway:
+  id: ""

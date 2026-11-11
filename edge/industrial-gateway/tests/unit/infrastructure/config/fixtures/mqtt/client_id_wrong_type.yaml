@@ -1,0 +1,4 @@
+# client_id 不是标量
+mqtt:
+  client_id:
+    - gateway

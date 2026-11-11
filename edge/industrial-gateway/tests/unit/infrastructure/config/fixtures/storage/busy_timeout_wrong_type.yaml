@@ -1,0 +1,4 @@
+# busy_timeout_ms 必须能够转换为整数
+storage:
+  database_path: "data/test_gateway.db"
+  busy_timeout_ms: "not-a-number"

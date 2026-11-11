@@ -1,0 +1,7 @@
+# host 为空字符串：解析应成功，配置校验应失败
+mqtt:
+  enabled: true
+  host: ""
+  port: 1883
+  client_id: "gateway-test"
+  keep_alive: 60

@@ -1,0 +1,5 @@
+# 不包含 mqtt 配置段
+# MqttConfigParser 应使用 MqttConfig 默认值
+schema_version: 1
+gateway:
+  id: "gateway-test"

@@ -1,0 +1,5 @@
+# 根节点是合法 Map，但不包含 storage 节点
+schema_version: 1
+
+gateway:
+  id: "industrial-gateway-test"

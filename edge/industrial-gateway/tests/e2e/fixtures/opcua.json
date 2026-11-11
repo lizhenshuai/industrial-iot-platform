@@ -1,0 +1,60 @@
+{
+  "devices": [
+    {
+      "protocol": "opcua", "device_id": 30001,
+      "points": [
+        {"property": "temperature", "node_id": "ns=2;i=1001", "interval_ms": 1000, "scale": 2.0, "offset": 1.0},
+        {"property": "running", "node_id": "ns=2;i=1002", "interval_ms": 1000},
+        {"property": "float_value", "node_id": "ns=2;s=Device1.Float", "interval_ms": 1000},
+        {"property": "removed_value", "node_id": "ns=2;s=Device1.Removed", "interval_ms": 1000},
+        {"property": "label", "node_id": "ns=2;s=Device1.Label", "interval_ms": 5000},
+        {"property": "signed_value", "node_id": "ns=2;s=Device1.Int64", "interval_ms": 5000},
+        {"property": "unsigned_value", "node_id": "ns=2;s=Device1.UInt64", "interval_ms": 5000}
+      ],
+      "added_point": {"property": "added_value", "node_id": "ns=2;s=Device1.Added", "interval_ms": 5000},
+      "nodes": [
+        {"node_id": "ns=2;i=1001", "type": "double", "value": 36.5},
+        {"node_id": "ns=2;i=1002", "type": "bool", "value": true},
+        {"node_id": "ns=2;s=Device1.Float", "type": "float", "value": 1.25},
+        {"node_id": "ns=2;s=Device1.Removed", "type": "int16", "value": -123},
+        {"node_id": "ns=2;s=Device1.Label", "type": "string", "value": "泵A \"运行\"\n状态"},
+        {"node_id": "ns=2;s=Device1.Int64", "type": "int64", "value": -9007199254740993},
+        {"node_id": "ns=2;s=Device1.UInt64", "type": "uint64", "value": 18446744073709551615},
+        {"node_id": "ns=2;s=Device1.Added", "type": "uint32", "value": 4294967295}
+      ],
+      "expected": {
+        "temperature": 74.0, "running": true, "float_value": 1.25, "removed_value": -123,
+        "label": "泵A \"运行\"\n状态", "signed_value": -9007199254740993,
+        "unsigned_value": 18446744073709551615, "added_value": 4294967295
+      }
+    },
+    {
+      "protocol": "opcua", "device_id": 30002,
+      "points": [
+        {"property": "temperature", "node_id": "ns=2;i=2001", "interval_ms": 1000, "scale": 0.1},
+        {"property": "running", "node_id": "ns=2;i=2002", "interval_ms": 1000},
+        {"property": "float_value", "node_id": "ns=2;s=Device2.Float", "interval_ms": 1000},
+        {"property": "removed_value", "node_id": "ns=2;s=Device2.Removed", "interval_ms": 1000},
+        {"property": "label", "node_id": "ns=2;s=Device2.Label", "interval_ms": 5000},
+        {"property": "signed_value", "node_id": "ns=2;s=Device2.Int64", "interval_ms": 5000},
+        {"property": "unsigned_value", "node_id": "ns=2;s=Device2.UInt64", "interval_ms": 5000}
+      ],
+      "added_point": {"property": "added_value", "node_id": "ns=2;s=Device2.Added", "interval_ms": 5000},
+      "nodes": [
+        {"node_id": "ns=2;i=2001", "type": "double", "value": -12.5},
+        {"node_id": "ns=2;i=2002", "type": "bool", "value": false},
+        {"node_id": "ns=2;s=Device2.Float", "type": "float", "value": -2.5},
+        {"node_id": "ns=2;s=Device2.Removed", "type": "uint16", "value": 65535},
+        {"node_id": "ns=2;s=Device2.Label", "type": "string", "value": "泵B\u0000待机"},
+        {"node_id": "ns=2;s=Device2.Int64", "type": "int64", "value": 9007199254740993},
+        {"node_id": "ns=2;s=Device2.UInt64", "type": "uint64", "value": 18446744073709551614},
+        {"node_id": "ns=2;s=Device2.Added", "type": "uint32", "value": 1234567890}
+      ],
+      "expected": {
+        "temperature": -1.25, "running": false, "float_value": -2.5, "removed_value": 65535,
+        "label": "泵B\u0000待机", "signed_value": 9007199254740993,
+        "unsigned_value": 18446744073709551614, "added_value": 1234567890
+      }
+    }
+  ]
+}

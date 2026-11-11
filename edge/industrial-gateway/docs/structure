@@ -1,0 +1,75 @@
+.
+├── CMakeLists.txt
+├── README.md
+├── DEPENDENCIES.md
+├── cmake
+│   ├── BuildOptions.cmake
+│   ├── CompilerOptions.cmake
+│   ├── Dependencies.cmake
+│   └── Sanitizers.cmake
+├── config
+│   └── gateway.yaml
+├── deploy
+├── docs
+│   ├── 本地开发与运行指南.md
+│   ├── 系统架构.md
+│   ├── 配置指南.md
+│   ├── MQTT通信协议.md
+│   ├── modbus_rtu.md
+│   └── opcua.md
+├── include
+│   └── industrial_gateway
+│       ├── application
+│       │   └── ports
+│       ├── common
+│       │   ├── ILogger.hpp
+│       │   └── LogLevel.hpp
+│       ├── config
+│       │   ├── GatewayConfig.hpp
+│       │   ├── LoggerConfig.hpp
+│       │   ├── MqttConfig.hpp
+│       │   └── StorageConfig.hpp
+│       └── domain
+├── main.cpp
+├── scripts
+├── src
+│   ├── app
+│   ├── application
+│   │   ├── collection
+│   │   ├── config
+│   │   ├── connector
+│   │   ├── gateway
+│   │   ├── ingestion
+│   │   ├── publishing
+│   │   └── status
+│   ├── common
+│   ├── domain
+│   │   ├── enums
+│   │   ├── model
+│   │   ├── types
+│   │   └── value_objects
+│   ├── drivers
+│   │   ├── common
+│   │   ├── modbus_rtu
+│   │   ├── modbus_tcp
+│   │   ├── opcua
+│   │   └── registration
+│   ├── infrastructure
+│   │   ├── concurrency
+│   │   ├── config
+│   │   │   ├── ConfigValidator.cpp
+│   │   │   ├── ConfigValidator.hpp
+│   │   │   ├── LoggerConfigParser.cpp
+│   │   │   ├── LoggerConfigParser.hpp
+│   │   │   ├── YamlConfigLoader.cpp
+│   │   │   └── YamlConfigLoader.hpp
+│   │   ├── logging
+│   │   │   ├── SpdlogLogger.cpp
+│   │   │   └── SpdlogLogger.hpp
+│   │   ├── monitoring
+│   │   ├── mqtt
+│   │   ├── storage
+│   │   │   └── sqlite
+│   │   └── system
+│   └── main.cpp
+└── tools

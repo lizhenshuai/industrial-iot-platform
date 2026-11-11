@@ -1,0 +1,4 @@
+# 最小合法边界：0ms
+storage:
+  database_path: "data/test_gateway.db"
+  busy_timeout_ms: 0

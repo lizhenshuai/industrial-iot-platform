@@ -1,0 +1,32 @@
+{
+  "points": [
+    {"property": "temperature", "address": 0, "data_type": "uint16", "scale": 0.1, "interval_ms": 1000},
+    {"property": "signed_value", "address": 1, "data_type": "int16", "interval_ms": 1000},
+    {"property": "float_value", "address": 4, "data_type": "float32", "interval_ms": 1000},
+    {"property": "wide_value", "address": 20, "data_type": "uint32", "word_order": "low_word_first", "interval_ms": 5000},
+    {"property": "swapped_value", "address": 22, "data_type": "uint16", "byte_order": "low_byte_first", "interval_ms": 5000}
+  ],
+  "added_point": {"property": "added_value", "address": 6, "data_type": "uint16", "interval_ms": 5000},
+  "devices": [
+    {
+      "protocol": "tcp", "device_id": 10001, "unit_id": 1, "register_type": "holding",
+      "registers": {"0": 123, "1": 65436, "4": 16320, "5": 0, "6": 321, "20": 22136, "21": 4660, "22": 13330},
+      "expected": {"temperature": 12.3, "signed_value": -100, "float_value": 1.5, "wide_value": 305419896, "swapped_value": 4660, "added_value": 321}
+    },
+    {
+      "protocol": "tcp", "device_id": 10002, "unit_id": 2, "register_type": "input",
+      "registers": {"0": 234, "1": 65336, "4": 16416, "5": 0, "6": 432, "20": 13124, "21": 4386, "22": 30806},
+      "expected": {"temperature": 23.4, "signed_value": -200, "float_value": 2.5, "wide_value": 287454020, "swapped_value": 22136, "added_value": 432}
+    },
+    {
+      "protocol": "rtu", "device_id": 20001, "unit_id": 1, "register_type": "holding",
+      "registers": {"0": 345, "1": 65236, "4": 16480, "5": 0, "6": 543, "20": 772, "21": 258, "22": 48282},
+      "expected": {"temperature": 34.5, "signed_value": -300, "float_value": 3.5, "wide_value": 16909060, "swapped_value": 39612, "added_value": 543}
+    },
+    {
+      "protocol": "rtu", "device_id": 20002, "unit_id": 2, "register_type": "input",
+      "registers": {"0": 456, "1": 65136, "4": 16528, "5": 0, "6": 654, "20": 1798, "21": 1284, "22": 61389},
+      "expected": {"temperature": 45.6, "signed_value": -400, "float_value": 4.5, "wide_value": 84150022, "swapped_value": 52719, "added_value": 654}
+    }
+  ]
+}

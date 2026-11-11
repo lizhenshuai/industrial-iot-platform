@@ -1,0 +1,12 @@
+logging:
+  level: info
+
+  console_enabled: false
+  file_enabled: false
+
+  file_path: tests/integration/logging/output/invalid.log
+
+  rotation:
+    strategy: size
+    max_size_bytes: 10485760
+    max_files: 5

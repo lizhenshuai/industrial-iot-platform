@@ -1,0 +1,12 @@
+logging:
+  level: info
+
+  console_enabled: false
+  file_enabled: true
+
+  file_path: tests/integration/logging/output/rotation.log
+
+  rotation:
+    strategy: size
+    max_size_bytes: 1024
+    max_files: 2

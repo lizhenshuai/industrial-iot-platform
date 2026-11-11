@@ -1,0 +1,12 @@
+# Parser 应解析成功，Validator 应拒绝越界 MQTT 端口
+schema_version: 1
+
+gateway:
+  id: "industrial-gateway-test"
+
+mqtt:
+  enabled: true
+  host: "127.0.0.1"
+  port: 65536
+  client_id: "industrial-gateway-test"
+  keep_alive: 60

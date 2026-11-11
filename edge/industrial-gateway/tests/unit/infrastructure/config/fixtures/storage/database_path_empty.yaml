@@ -1,0 +1,4 @@
+# 空路径由 ConfigValidator 拒绝
+storage:
+  database_path: ""
+  busy_timeout_ms: 5000

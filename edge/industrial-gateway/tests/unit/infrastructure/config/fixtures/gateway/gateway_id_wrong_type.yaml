@@ -1,0 +1,6 @@
+# gateway.id 不是标量类型
+schema_version: 1
+
+gateway:
+  id:
+    - industrial-gateway-test

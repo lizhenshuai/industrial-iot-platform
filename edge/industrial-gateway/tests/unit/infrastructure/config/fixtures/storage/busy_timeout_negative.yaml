@@ -1,0 +1,4 @@
+# 负数能够被 Parser 解析，但应由 ConfigValidator 拒绝
+storage:
+  database_path: "data/test_gateway.db"
+  busy_timeout_ms: -1

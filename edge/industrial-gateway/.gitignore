@@ -2,6 +2,7 @@
 # CMake 构建文件
 # ==============================
 build/
+/build-*/
 cmake-build-*/
 CMakeFiles/
 CMakeCache.txt
@@ -47,6 +48,9 @@ compile_commands.json
 *.swp
 *.swo
 *~
+/logs/
+/data/
+/tests/unit/infrastructure/logging/output/
 
 # ==============================
 # IDE 配置
@@ -75,6 +79,15 @@ __pycache__/
 .env
 .env.*
 !.env.example
+/config/gateway.local.yaml
+
+# ==============================
+# 单独安装的依赖源码与本地工具数据
+# ==============================
+/open62541/
+/$HOME/
+/.codex/
+/.aws/
 
 # ==============================
 # 发布目录

@@ -1,0 +1,7 @@
+# keep_alive 为负数：解析应成功，配置校验应失败
+mqtt:
+  enabled: true
+  host: "127.0.0.1"
+  port: 1883
+  client_id: "gateway-test"
+  keep_alive: -1

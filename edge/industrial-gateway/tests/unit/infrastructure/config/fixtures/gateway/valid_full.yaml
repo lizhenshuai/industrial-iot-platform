@@ -1,0 +1,26 @@
+# 完整、合法的网关配置
+schema_version: 1
+
+gateway:
+  id: "industrial-gateway-test"
+
+logging:
+  level: info
+  console_enabled: true
+  file_enabled: true
+  file_path: "logs/gateway-test.log"
+  rotation:
+    strategy: size
+    max_size_bytes: 10485760
+    max_files: 5
+
+mqtt:
+  enabled: true
+  host: "127.0.0.1"
+  port: 1883
+  client_id: "industrial-gateway-test"
+  keep_alive: 60
+
+storage:
+  database_path: "data/gateway-test.db"
+  busy_timeout_ms: 5000

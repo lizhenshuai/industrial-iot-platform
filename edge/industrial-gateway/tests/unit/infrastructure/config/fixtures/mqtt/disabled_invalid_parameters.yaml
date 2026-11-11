@@ -1,0 +1,7 @@
+# MQTT 已禁用，连接参数虽然不合法，但配置校验应通过
+mqtt:
+  enabled: false
+  host: ""
+  port: 0
+  client_id: ""
+  keep_alive: -1
